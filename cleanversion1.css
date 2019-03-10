@@ -1,0 +1,135 @@
+/*General Styles*/
+*{
+    margin:0;
+    font-family:verdana;
+}
+body{
+    background:#443355
+}
+.wrapper{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+}
+/*Navigation Styles*/
+/*Normal*/
+nav{
+    background:#80609F;
+}
+nav ul {
+    padding:0;
+    line-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    display:block;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+nav a:hover{
+    background:#5E4675;
+}
+.fb{
+    background:url(img/fb.png) no-repeat center;
+    background-size:80%;
+}
+.tw{
+    background:url(img/tw.png) no-repeat center;
+    background-size:80%;
+}
+.fb:hover{
+    background:url(img/fb.png) no-repeat center;
+    background-size:80%;
+}
+.tw:hover{
+    background:url(img/tw.png) no-repeat center;
+    background-size:80%;
+}
+.social a{
+    text-indent:-10000px;
+}
+.social{
+    width:80px;
+    margin:0 auto;
+    list-style:none;
+}
+
+/*Flex*/
+.social{
+    display:flex;
+}
+.social li{
+    flex:1 1 0;
+}
+/*Content Styles*/
+/*Normal*/
+.link{
+    padding:20px;
+    background:white;
+    text-align:center;
+}
+.link a{
+    text-decoration:none;
+    color:#80609F
+}
+#blocks{
+    margin:20px;
+}
+article {
+    background:white;
+    padding:10px;
+    margin-bottom:20px;
+    box-sizing:border-box;
+}
+article h2{
+    font-size:18px;
+    text-transform:uppercase;
+    text-align:center;
+    padding:10px 0;
+}
+article p {
+    font-size:14px;
+}
+/*Flex*/
+
+/*Media Query Styles*/
+@media screen and (min-width:768px){
+    /*Navigation Styles*/
+    /*Normal*/
+
+    nav ul{
+        display:flex;
+        list-style:none;
+    }
+    nav li{
+        flex:1 1 0;
+    }
+    nav{
+       display:flex;
+       justify-content:space-between
+    }
+    .social{
+        margin:0;
+    }
+    /*Flex*/
+
+    /*Content Styles*/
+    /*Normal*/
+
+    /*Flex*/
+    #blocks{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    article{
+        flex:0 1 32%;
+        transition:flex 0.2s ease;
+    }
+    .stuckme{
+        flex:0 1 100%;
+    }
+}
+
