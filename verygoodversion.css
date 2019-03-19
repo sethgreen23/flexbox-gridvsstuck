@@ -1,0 +1,125 @@
+/*Genaral Styling*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:verdana;
+    font-size:16px;
+}
+body{
+    background:#8e44ad;
+}
+.wrapper{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+}
+
+/*Navigation Styling*/
+nav{
+    background:#9b59b6;
+}
+nav ul{
+   list-style:none;
+}
+nav a{
+    padding:10px;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+}
+.social{
+    display:flex;
+    max-width:80px;
+    margin:0 auto;
+}
+.social li{
+    text-indent:-10000px;
+    flex:1 1 0;
+
+}
+a:hover{
+    background:#c6a0d5;
+}
+.fb{
+    background:url(img/fb.png) no-repeat center;
+    background-size:80%;
+}
+.tw{
+    background:url(img/tw.png) no-repeat center;
+    background-size:80%;
+}
+.social .fb:hover{
+    background:url(img/fb.png) no-repeat center;
+    background-size:80%;
+}
+.social .tw:hover{
+    background:url(img/tw.png) no-repeat center;
+    background-size:80%;
+}
+
+/*Link Styling*/
+.link{
+    background:white;
+    padding:20px;
+    text-align:center
+}
+.link a{
+    text-decoration:none;
+    color:#8e44ad;
+    padding:5px;
+}
+.link a:hover{
+    background:#f0e7f4
+}
+/*Blocks Styling*/
+ #blocks{
+    padding:10px;
+    margin-top:20px;
+    }
+ article{
+     background:white;
+     margin-bottom:20px;
+     padding:20px;
+     border-radius:10px;
+ }
+ 
+ article h2{
+     font-size:18px;
+     margin:15px;
+     text-transform:uppercase;
+     text-align:center;
+ }
+article p{
+    font-size:14px;
+    text-align:center;
+    line-height:1.6em;
+}
+/*Media Query*/
+@media screen and (min-width:786px){
+    /*Navigation Styling*/
+    nav{
+        display:flex;
+        justify-content:space-between;
+       padding:10px;
+    }
+    nav ul{
+        flex:1 1 0;
+        display:flex;
+    }
+   /*Blocks Styling*/
+   #blocks{
+       display:flex;
+       flex-wrap:wrap;
+       justify-content:space-between;
+   }
+  article{
+       flex:0 0 32%;
+
+   }
+  .stuckme{
+       flex:0 0 100%;
+   }
+}
+
